@@ -1,6 +1,6 @@
 
 # LAB 18: Image Uploads w/ AWS S3
-
+[![Build Status](https://travis-ci.org/Iamheathsmith/19-deployment.svg?branch=master)](https://travis-ci.org/Iamheathsmith/19-deployment)
 
 ### Installing and How to use.
 
