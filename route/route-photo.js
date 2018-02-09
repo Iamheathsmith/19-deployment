@@ -11,7 +11,7 @@ const bearerAuth = require('../lib/bearer-auth-middleware');
 
 // Photo Upload Dependencies & Setup
 const multer = require('multer');
-const tempDir = `${__dirname}/../../temp`;
+// const tempDir = `${__dirname}/../../temp`;
 const upload = multer({dest: tempDir});
 
 module.exports = function(router) {
