@@ -39,7 +39,10 @@ describe('POST /api/v1/signup', function() {
     it('should return a status 404 on bad path', () => {
       return superagent.post(':4000/api/v1/doesNotExist')
         .send(mocks.user.createOne())
-        .catch(err => expect(err.status).toBe(404));
+        .catch(err => {
+          console.log(err);
+          expect(err.status).toBe(404);
+        });
     });
     it('should return a status 400 on bad request body', () => {
       return superagent.post(base)
