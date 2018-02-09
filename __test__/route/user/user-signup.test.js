@@ -38,7 +38,6 @@ describe('POST /api/v1/signup', function() {
   describe('Invalid req/res', () => {
     it('should return a status 404 on bad path', () => {
       return superagent.post(':4000/api/v1/doesNotExist')
-        .send(mocks.user.createOne())
         .catch(err => {
           console.log(err);
           expect(err.status).toBe(404);
